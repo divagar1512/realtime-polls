@@ -1,5 +1,5 @@
 {
-  "name": "polling-app",
+  "name": "realtime-polls",
   "version": "0.1.0",
   "private": true,
   "scripts": {

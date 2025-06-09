@@ -24,8 +24,8 @@ A modern, real-time polling application built with Next.js 14, TypeScript, and S
 
 1. **Clone the repository**
    ```bash
-   git clone https://www.github.com/thefznkhan/polling-app
-   cd polling-app
+   git clone https://www.github.com/thefznkhan/realtime-polls
+   cd realtime-polls
    ```
 
 2. **Install dependencies**
