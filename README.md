@@ -1,226 +1,111 @@
-# RealTime Polling Application
+# Real-Time Polls Application 🎉
 
-A modern, real-time polling application built with Next.js 14, TypeScript, and Socket.IO. Create interactive polls and get instant feedback with beautiful visualizations and live updates.
+![Real-Time Polls](https://img.shields.io/badge/Version-1.0.0-blue.svg) ![GitHub Release](https://img.shields.io/badge/Release-v1.0.0-orange.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## ✨ Features
+Welcome to the **Real-Time Polls** repository! This modern polling application allows users to create interactive polls and receive instant feedback. Built with **Next.js 14**, **TypeScript**, and **Socket.IO**, it offers beautiful visualizations and live updates to enhance user engagement.
 
-- **Real-time Updates**: See votes come in live with Socket.IO
-- **Beautiful UI**: Modern design with Tailwind CSS and Framer Motion animations
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
-- **Dark/Light Theme**: Toggle between themes with smooth transitions
-- **Accessibility**: WCAG AA compliant with keyboard navigation and screen reader support
-- **Interactive Charts**: Visualize results with Recharts (bar and pie charts)
-- **Admin Dashboard**: Comprehensive poll management with live statistics
-- **Easy Sharing**: Simple poll codes for easy participant access
+## Table of Contents
 
-## 🚀 Quick Start
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-### Prerequisites
+## Features 🌟
 
-- Node.js 18+ 
-- npm or yarn
+- **Real-Time Updates**: Users can see poll results as they come in, thanks to Socket.IO.
+- **Interactive Polls**: Create and manage polls easily with a user-friendly interface.
+- **Beautiful Visualizations**: Visualize poll results with stunning charts and graphs.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **Secure and Scalable**: Built with modern technologies to ensure performance and security.
 
-### Installation
+## Technologies Used 🛠️
 
-1. **Clone the repository**
+This project utilizes the following technologies:
+
+- **Next.js 14**: A powerful React framework for building server-side rendered applications.
+- **TypeScript**: A typed superset of JavaScript that helps catch errors early.
+- **Socket.IO**: Enables real-time, bidirectional communication between web clients and servers.
+- **Framer Motion**: For smooth animations and transitions.
+- **Lucide React**: A set of icons for React applications.
+- **Radix UI**: Provides unstyled, accessible UI components.
+- **Recharts**: A composable charting library built on React components.
+- **Shadcn UI**: A UI component library for faster development.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Zod**: A TypeScript-first schema declaration and validation library.
+
+## Installation ⚙️
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository**:
+
    ```bash
-   git clone https://www.github.com/thefznkhan/realtime-polls
+   git clone https://github.com/divagar1512/realtime-polls.git
    cd realtime-polls
    ```
 
-2. **Install dependencies**
+2. **Install dependencies**:
+
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.local.example .env.local
-   ```
-   
-   Update `.env.local` with your configuration:
-   ```env
-   NEXT_PUBLIC_API_URL=http://localhost:3001
-   ```
+3. **Run the application**:
 
-4. **Start the development server**
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
-5. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+4. **Open your browser** and go to `http://localhost:3000`.
 
-## 📁 Project Structure
+For detailed release information, visit the [Releases section](https://github.com/divagar1512/realtime-polls/releases).
 
-```
-├── app/                          # Next.js 14 App Router
-│   ├── admin/
-│   │   ├── create/              # Poll creation page
-│   │   └── session/[code]/      # Admin dashboard
-│   ├── join/                    # Join poll page
-│   ├── session/[code]/          # User voting interface
-│   ├── layout.tsx               # Root layout
-│   ├── page.tsx                 # Home page
-│   └── globals.css              # Global styles
-├── components/
-│   ├── charts/                  # Chart components
-│   ├── layout/                  # Layout components
-│   ├── providers/               # Context providers
-│   └── ui/                      # Reusable UI components
-├── hooks/                       # Custom React hooks
-├── lib/                         # Utilities and types
-└── public/                      # Static assets
-```
+## Usage 📊
 
-## 🎯 Usage
+Once the application is running, you can create a poll by following these steps:
 
-### Creating a Poll (Admin)
+1. Navigate to the poll creation page.
+2. Enter your poll question and options.
+3. Click on "Create Poll" to publish your poll.
+4. Share the poll link with others to gather responses.
 
-1. Navigate to `/admin/create`
-2. Enter your poll question
-3. Add 2-6 answer options
-4. Optionally set a duration
-5. Click "Launch Poll"
-6. Share the generated poll code with participants
+As users vote, you will see live updates of the results. The results will be displayed in visually appealing charts, allowing for easy analysis.
 
-### Joining a Poll (Participant)
+## Contributing 🤝
 
-1. Navigate to `/join`
-2. Enter the 6-digit poll code
-3. Vote on the poll question
-4. View live results after voting
+We welcome contributions to enhance the application. If you wish to contribute, please follow these steps:
 
-### Managing a Poll (Admin)
+1. **Fork the repository**.
+2. Create a new branch:
 
-1. Use the admin dashboard at `/admin/session/[code]`
-2. Monitor live vote counts and statistics
-3. View real-time charts and analytics
-4. End the poll when ready
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
 
-## 🛠️ Development
+3. Make your changes and commit them:
 
-### Available Scripts
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
-- `npm run type-check` - Run TypeScript type checking
+4. Push to your branch:
 
-### Code Quality
+   ```bash
+   git push origin feature/YourFeature
+   ```
 
-This project uses:
-- **ESLint** for code linting
-- **Prettier** for code formatting
-- **Husky** for pre-commit hooks
-- **TypeScript** for type safety
+5. Open a pull request.
 
-Pre-commit hooks automatically run linting and type-checking to ensure code quality.
+## License 📜
 
-## 🎨 Customization
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Theme Colors
+## Links 🔗
 
-Update the color palette in `tailwind.config.js`:
+For detailed release information, visit the [Releases section](https://github.com/divagar1512/realtime-polls/releases). 
 
-```js
-colors: {
-  primary: {
-    500: '#4F46E5', // Indigo
-    // ... other shades
-  },
-  secondary: {
-    500: '#F59E0B', // Amber
-    // ... other shades
-  }
-}
-```
-
-### Animations
-
-Customize animations in the Framer Motion components or add new ones in `globals.css`.
-
-## 📱 Responsive Design
-
-The application is built mobile-first with responsive breakpoints:
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px  
-- **Desktop**: > 1024px
-
-## ♿ Accessibility
-
-- Semantic HTML structure
-- ARIA labels and roles
-- Keyboard navigation support
-- Focus management
-- Color contrast compliance (WCAG AA)
-- Screen reader compatibility
-
-## 🔧 Configuration
-
-### Socket.IO Setup
-
-The application expects a Socket.IO server running on the URL specified in `NEXT_PUBLIC_API_URL`. 
-
-Key events:
-- `join-poll` - Join a poll room
-- `cast-vote` - Cast a vote
-- `create-poll` - Create new poll
-- `end-poll` - End a poll
-- `poll-updated` - Receive poll updates
-- `vote-cast` - Receive new votes
-
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `NEXT_PUBLIC_API_URL` | Socket.IO server URL | `http://localhost:3001` |
-
-## 📊 Performance
-
-- **Server Components** for optimal performance
-- **Code splitting** with Next.js App Router
-- **Image optimization** with Next.js Image component
-- **Lazy loading** for charts and heavy components
-- **Optimized animations** with Framer Motion
-
-## 🧪 Testing
-
-Run tests with:
-```bash
-npm run test
-```
-
-
-## 📦 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Set environment variables in Vercel dashboard
-4. Deploy automatically on push
-
-### Other Platforms
-
-Build the application:
-```bash
-npm run build
-```
-
-The built application will be in the `.next` folder.
-
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
+Feel free to explore the project and contribute to its growth! Your feedback and contributions are highly appreciated.
